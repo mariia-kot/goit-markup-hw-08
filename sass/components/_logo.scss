@@ -7,8 +7,12 @@
 .logo--black {
   color: var(--black-logo-color);
 }
- .logo--blue {
+.logo--blue {
   color: var(--accent-color);
+}
+.logo--white {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {

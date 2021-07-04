@@ -102,7 +102,7 @@
             </section>
         </div>
 
-        <!-- <div>
+        <div>
             <section class="advantages">
                 <div class="container">
                     <h2 class="section-title hidden">Почему именно мы</h2>
@@ -150,29 +150,44 @@
                     </ul>
                 </div>
             </section>
-        </div> -->
+        </div>
 
-        <!-- <div>
+        <div>
             <section class="works section">
                 <div class="container">
-                <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="works-list list">
-                    <li class="works-list__item">
-                        <img src="./images/box1.jpeg" alt="Человек пишет код" width="370">
-                        <p class="works-list__text">Десктопные приложения</p>
-                    </li>
-                    <li class="works-list__item">
-                        <img src="./images/box2.jpeg" alt="Человек с телефоном в руке" width="370">
-                        <p class="works-list__text">Мобильные приложения</p>
-                    </li>
-                    <li class="works-list__item">
-                        <img src="./images/box3.jpeg" alt="Человек выбирает цвет из гаммы" width="370">
-                        <p class="works-list__text">Дизайнерские решения</p>
-                    </li>
-                </ul>
+                    <h2 class="section-title">Чем мы занимаемся</h2>
+                    <ul class="works-list list">
+                        <li class="works-list__item">
+                            <picture>
+                                <source srcset="./images/works/box1.webp 1x, ./images/works/box1@2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="./images/works/box1.jpeg 1x, ./images/works/box1@2x.jpeg 2x">
+                                <img src="./images/works/box1.jpeg" alt="Человек пишет код" width="370">
+                            </picture>
+                            <p class="works-list__text">Десктопные приложения</p>
+                        </li>
+                        <li class="works-list__item">
+                            <picture>
+                                <source srcset="./images/works/box2.webp 1x, ./images/works/box2@2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="./images/works/box2.jpeg 1x, ./images/works/box2@2x.jpeg 2x">
+                                <img src="./images/works/box2.jpeg" alt="Человек с телефоном в руке" width="370">
+                            </picture>
+                            <p class="works-list__text">Мобильные приложения</p>
+                        </li>
+                        <li class="works-list__item">
+                            <picture>
+                                <source srcset="./images/works/box3.webp 1x, ./images/works/box3@2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="./images/works/box3.jpeg 1x, ./images/works/box3@2x.jpeg 2x">
+                                <img src="./images/works/box3.jpeg" alt="Человек выбирает цвет из гаммы" width="370">
+                            </picture>
+                            <p class="works-list__text">Дизайнерские решения</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
-        </div> -->
+        </div>
 
 
         <!-- <div>
@@ -334,11 +349,11 @@
             </section>
         </div> -->
 
-        <!-- <div>
+        <div>
             <section class="clients section">
                 <div class="container">
                     <h2 class="section-title">Постоянные клиенты</h2>
-                    <ul class="client list"> 
+                    <ul class="client list">
                         <li class="client__card">
                             <a href="" class="client__link link">
                                 <svg class="client__icon" width="41" height="47">
@@ -385,72 +400,77 @@
                 </div>
 
             </section>
-        </div> -->
+        </div>
 
     </main>
 
     <!-- ================ F O O T E R ================ -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
-        <div class="footer__contacts">
-        <a href="" class="logo logo--white link" lang="en"><span class="logo--blue">Web</span>Studio</a>
-        <ul class="contacts list">
-            <li class="contacts__item contacts__item--in-footer">
-                <address><p class="contacts__address">г. Киев, пр-т Леси Украинки, 26</p></address>
-            </li>
-            <li class="contacts__item contacts__item--in-footer"><a href="mailto:info@example.com" class="contacts__link contacts__link--in-footer link">info@example.com</a></li>
-            <li class="contacts__item contacts__item--in-footer"><a href="tel:+380991111111" class="contacts__link contacts__link--in-footer link">+38 099 111 11 11</a></li>
-        </ul>
-        </div>
+            <div class="footer__contacts">
+                <a href="" class="logo logo--white link" lang="en"><span class="logo--blue">Web</span>Studio</a>
+                <ul class="contacts list">
+                    <li class="contacts__item contacts__item--in-footer">
+                        <address>
+                            <p class="contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
+                        </address>
+                    </li>
+                    <li class="contacts__item contacts__item--in-footer"><a href="mailto:info@example.com"
+                            class="contacts__link contacts__link--in-footer link">info@example.com</a></li>
+                    <li class="contacts__item contacts__item--in-footer"><a href="tel:+380991111111"
+                            class="contacts__link contacts__link--in-footer link">+38 099 111 11 11</a></li>
+                </ul>
+            </div>
 
-        <div class="footer__social">
-        <h3 class="footer__text">присоединяйтесь</h3>
-        <ul class="social-list list">
-            <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--in-footer link">
-                    <svg class="social-list__icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--in-footer link">
-                    <svg class="social-list__icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--in-footer link">
-                    <svg class="social-list__icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--in-footer link">
-                    <svg class="social-list__icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        </div>
-        <div class="footer__subscribe">
-            <p class="footer__text">Подпишитесь на рассылку</p>
-            <form action="#" class="subscription-form">
-                <input type="email" placeholder="E-mail" name="user-email" class="subscription-form__input" required>
-                <button type="submit" class="button button--with-icon">
-                    <span class="button__text">Подписаться</span>
-                    <svg class="button__icon--end" width="24" height="24">
-                        <use href="./images/icons.svg#icon-telegram"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
+            <div class="footer__social">
+                <h3 class="footer__text">присоединяйтесь</h3>
+                <ul class="social-list list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--in-footer link">
+                            <svg class="social-list__icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--in-footer link">
+                            <svg class="social-list__icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--in-footer link">
+                            <svg class="social-list__icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--in-footer link">
+                            <svg class="social-list__icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__subscribe">
+                <p class="footer__text">Подпишитесь на рассылку</p>
+                <form action="#" class="subscription-form">
+                    <input type="email" placeholder="E-mail" name="user-email" class="subscription-form__input"
+                        required>
+                    <button type="submit" class="button button--with-icon">
+                        <span class="button__text">Подписаться</span>
+                        <svg class="button__icon--end" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
 
         </div>
-    </footer> -->
+    </footer>
 
     <!-- ================ B A C K D R O P ================ -->
     <!-- <div class="backdrop is-hidden" data-modal>
