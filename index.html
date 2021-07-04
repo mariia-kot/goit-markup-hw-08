@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -17,34 +19,75 @@
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
-        <nav class="header__navigation">
-            <a href="" class="logo logo--black link" lang="en"><span class="logo--blue">Web</span>Studio</a>
+            <nav class="header__navigation">
+                <a href="" class="logo logo--black link" lang="en"><span class="logo--blue">Web</span>Studio</a>
 
-            <ul class="menu list">
-                <li class="menu__item"><a href="" class="menu__link menu__link--current link">Студия</a></li>
-                <li class="menu__item"><a href="./portfolio.html" class="menu__link link">Портфолио</a></li>
-                <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
+                <ul class="menu list">
+                    <li class="menu__item"><a href="" class="menu__link menu__link--current link">Студия</a></li>
+                    <li class="menu__item"><a href="./portfolio.html" class="menu__link link">Портфолио</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="mobile-menu__btn" data-menu-button>
+                <svg class="mobile-menu__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-mobile-menu-btn"></use>
+                </svg>
+            </button>
+
+            <ul class="contacts header__contacts list">
+                <li class="contacts__item contacts__item--in-header">
+                    <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--in-header link">
+                        <svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                    </a>
+                </li>
+                <li class="contacts__item contacts__item--in-header">
+                    <a href="tel:+380961111111" class="contacts__link contacts__link--in-header link">
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        <span>+38 096 111 11 11</span>
+                    </a>
+                </li>
             </ul>
-        </nav>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__nav-item"><a href=""
+                            class="mobile-menu__nav-link mobile-menu__nav-link--current link">Студия</a></li>
+                    <li class="mobile-menu__nav-item"><a href="./portfolio.html"
+                            class="mobile-menu__nav-link link">Портфолио</a></li>
+                    <li class="mobile-menu__nav-item"><a href="" class="mobile-menu__nav-link link">Контакты</a></li>
+                </ul>
+                <ul class="mobile-menu__contacts list">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="tel:+380961111111" class="mobile-menu__contacts-link link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com"
+                            class="mobile-menu__contacts-link mobile-menu__contacts-link--grey link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social list">
+                    <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                    </li>
+                </ul>
 
-        <ul class="contacts header__contacts list">
-            <li class="contacts__item contacts__item--in-header">
-                <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--in-header link">
-                    <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-mob-menu-close"></use>
                     </svg>
-                    <span>info@devstudio.com</span>
-                </a>
-            </li>
-            <li class="contacts__item contacts__item--in-header">
-                <a href="tel:+380961111111" class="contacts__link contacts__link--in-header link">
-                    <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    <span>+38 096 111 11 11</span>
-                </a>
-            </li>
-        </ul>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -53,59 +96,63 @@
         <div>
             <section class="hero">
                 <div class="container">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button" data-modal-open>Заказать услугу</button>
+                    <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                    <button type="button" class="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
         </div>
 
-        <div>
+        <!-- <div>
             <section class="advantages">
                 <div class="container">
-                <h2 class="section-title hidden">Почему именно мы</h2>
-                <ul class="advantages-list list">
-                    <li class="advantages-list__item">
-                        <div class="advantages-list__icon">
-                            <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-antenna"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages-list__title">Внимание к деталям</h3>
-                        <p class="advantages-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div class="advantages-list__icon">
-                            <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-clock"></use>
-                        </svg>
-                        </div>
-                        <h3 class="advantages-list__title">Пунктуальность</h3>
-                        <p class="advantages-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div class="advantages-list__icon">
-                            <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-diagram"></use>
-                        </svg>
-                        </div>
-                        <h3 class="advantages-list__title">Планирование</h3>
-                        <p class="advantages-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div class="advantages-list__icon">
-                            <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-astronaut"></use>
-                        </svg>
-                        </div>
-                        <h3 class="advantages-list__title">Современные технологии</h3>
-                        <p class="advantages-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
+                    <h2 class="section-title hidden">Почему именно мы</h2>
+                    <ul class="advantages-list list">
+                        <li class="advantages-list__item">
+                            <div class="advantages-list__icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#icon-antenna"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages-list__title">Внимание к деталям</h3>
+                            <p class="advantages-list__text">Идейные соображения, а также начало повседневной работы по
+                                формированию позиции.</p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <div class="advantages-list__icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#icon-clock"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages-list__title">Пунктуальность</h3>
+                            <p class="advantages-list__text">Задача организации, в особенности же рамки и место обучения
+                                кадров влечет за собой.</p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <div class="advantages-list__icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#icon-diagram"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages-list__title">Планирование</h3>
+                            <p class="advantages-list__text">Равным образом консультация с широким активом в
+                                значительной степени обуславливает.</p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <div class="advantages-list__icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#icon-astronaut"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages-list__title">Современные технологии</h3>
+                            <p class="advantages-list__text">Значимость этих проблем настолько очевидна, что реализация
+                                плановых заданий.</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
-        </div>
+        </div> -->
 
-        <div>
+        <!-- <div>
             <section class="works section">
                 <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
@@ -125,10 +172,10 @@
                 </ul>
                 </div>
             </section>
-        </div>
-        
+        </div> -->
 
-        <div>
+
+        <!-- <div>
             <section class="team-section section">
                 <div class="container">
                 <h2 class="section-title">Наша команда</h2>
@@ -285,9 +332,9 @@
                 </ul>
                 </div>
             </section>
-        </div>
+        </div> -->
 
-        <div>
+        <!-- <div>
             <section class="clients section">
                 <div class="container">
                     <h2 class="section-title">Постоянные клиенты</h2>
@@ -338,12 +385,12 @@
                 </div>
 
             </section>
-        </div>
+        </div> -->
 
     </main>
 
     <!-- ================ F O O T E R ================ -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
         <div class="footer__contacts">
         <a href="" class="logo logo--white link" lang="en"><span class="logo--blue">Web</span>Studio</a>
@@ -403,10 +450,10 @@
         </div>
 
         </div>
-    </footer>
+    </footer> -->
 
     <!-- ================ B A C K D R O P ================ -->
-<div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
             <svg class="close-btn__icon">
@@ -454,9 +501,11 @@
 
         </form>
     </div>
-</div>
+</div> -->
 
-<script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+
 </body>
 
 </html>
