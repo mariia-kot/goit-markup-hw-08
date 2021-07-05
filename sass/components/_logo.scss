@@ -19,16 +19,21 @@
   .logo {
     margin-right: 88px;
   }
+  .logo--white {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-   .logo {
-     font-size: 26px;
-     line-height: 1.192;
-     margin-right: 93px;
-   }
+  .logo {
+    display: block;
+    font-size: 26px;
+    line-height: 1.192;
+    margin-bottom: 20px;
+  }
 }
-// .logo { 
+// .logo {
 //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 //   &:hover,
