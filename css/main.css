@@ -245,7 +245,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .logo {
+  .logo--white {
     display: block;
     font-size: 26px;
     line-height: 1.192;
@@ -902,42 +902,64 @@ img {
   background-color: var(--third-background-color);
 }
 
-.member {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
 .member__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  text-align: center;
+  padding-bottom: 24px;
 }
 
 .member__card {
-  background-color: var(--primary-background-color);
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-background-color);
+  width: 100%;
+}
+
+.member__card:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .member__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.187;
   margin-bottom: 10px;
 }
 
 .member__position {
   color: var(--secondary-text-color);
   font-size: 16px;
-  line-height: 1.19;
-  margin-top: 0;
+  line-height: 1.187;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .member {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .member__card {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .member__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .member__card {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .member__meta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {

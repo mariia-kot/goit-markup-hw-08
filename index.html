@@ -96,7 +96,7 @@
         <div>
             <section class="hero">
                 <div class="container">
-                    <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                    <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
                     <button type="button" class="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
@@ -190,13 +190,30 @@
         </div>
 
 
-        <!-- <div>
+        <div>
             <section class="team-section section">
                 <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="member list">
                     <li class="member__card">
-                        <img class="member__photo" src="./images/img1.jpeg" alt="фото продакт дизайнера" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/member1-desktop.webp 1x, ./images/team/desktop/member1-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/team/desktop/member1-desktop.jpeg 1x, ./images/team/desktop/member1-desktop@2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+
+                            <source srcset="./images/team/tablet/member1-tablet.webp 1x, ./images/team/tablet/member1-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/team/tablet/member1-tablet.jpeg 1x, ./images/team/tablet/member1-tablet@2x.jpeg 2x"
+                                media="(min-width: 768px)">
+
+                            <source srcset="./images/team/phone/member1-phone.webp 1x, ./images/team/phone/member1-phone@2x.webp 2x" 
+                            type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/team/phone/member1-phone.jpeg 1x, ./images/team/phone/member1-phone@2x.jpeg 2x" 
+                            media="(max-width: 767px)">
+                            <img class="member__photo" src="./images/team/phone/member1-phone.jpeg" alt="фото продакт дизайнера">
+                        </picture>
+                        
                         
                         <div class="member__meta">
                            <h3 class="member__name">Игорь Демьяненко</h3>
@@ -234,7 +251,24 @@
                         </div>
                     </li>
                     <li class="member__card">
-                        <img class="member__photo" src="./images/img2.jpeg" alt="фото фронтенд разработчика" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/member2-desktop.webp 1x, ./images/team/desktop/member2-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/team/desktop/member2-desktop.jpeg 1x, ./images/team/desktop/member2-desktop@2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            
+                            <source srcset="./images/team/tablet/member2-tablet.webp 1x, ./images/team/tablet/member2-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/team/tablet/member2-tablet.jpeg 1x, ./images/team/tablet/member2-tablet@2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            
+                            <source srcset="./images/team/phone/member2-phone.webp 1x, ./images/team/phone/member2-phone@2x.webp 2x"
+                                type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/team/phone/member2-phone.jpeg 1x, ./images/team/phone/member2-phone@2x.jpeg 2x"
+                                media="(max-width: 767px)">
+                            <img class="member__photo" src="./images/team/phone/member2-phone.jpeg" alt="фото фронтенд разработчика">
+                        </picture>
+                        
                         <div class="member__meta">
                            <h3 class="member__name">Ольга Репина</h3>
                            <p class="member__position">Frontend Developer</p>
@@ -271,7 +305,24 @@
                        </div>
                     </li>
                     <li class="member__card">
-                        <img class="member__photo" src="./images/img3.jpeg" alt="фото специалиста по маркетингу" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/member3-desktop.webp 1x, ./images/team/desktop/member3-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/team/desktop/member3-desktop.jpeg 1x, ./images/team/desktop/member3-desktop@2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            
+                            <source srcset="./images/team/tablet/member3-tablet.webp 1x, ./images/team/tablet/member3-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/team/tablet/member3-tablet.jpeg 1x, ./images/team/tablet/member3-tablet@2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            
+                            <source srcset="./images/team/phone/member3-phone.webp 1x, ./images/team/phone/member3-phone@2x.webp 2x"
+                                type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/team/phone/member3-phone.jpeg 1x, ./images/team/phone/member3-phone@2x.jpeg 2x"
+                                media="(max-width: 767px)">
+                            <img class="member__photo" src="./images/team/phone/member3-phone.jpeg" alt="фото специалиста по маркетингу">  
+                        </picture>
+                        
                         <div class="member__meta">
                             <h3 class="member__name">Николай Тарасов</h3>
                             <p class="member__position">Marketing</p>
@@ -308,7 +359,24 @@
                         </div>
                     </li>
                     <li class="member__card">
-                        <img class="member__photo" src="./images/img4.jpeg" alt="фото дизайнера" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/member4-desktop.webp 1x, ./images/team/desktop/member4-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/team/desktop/member4-desktop.jpeg 1x, ./images/team/desktop/member4-desktop@2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            
+                            <source srcset="./images/team/tablet/member4-tablet.webp 1x, ./images/team/tablet/member4-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/team/tablet/member4-tablet.jpeg 1x, ./images/team/tablet/member4-tablet@2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            
+                            <source srcset="./images/team/phone/member4-phone.webp 1x, ./images/team/phone/member4-phone@2x.webp 2x"
+                                type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/team/phone/member4-phone.jpeg 1x, ./images/team/phone/member4-phone@2x.jpeg 2x"
+                                media="(max-width: 767px)">
+                            <img class="member__photo" src="./images/team/phone/member4-phone.jpeg" alt="фото дизайнера">
+                        </picture>
+                        
                         <div class="member__meta">
                             <h3 class="member__name">Михаил Ермаков</h3>
                             <p class="member__position">UI Designer</p>
@@ -347,7 +415,7 @@
                 </ul>
                 </div>
             </section>
-        </div> -->
+        </div>
 
         <div>
             <section class="clients section">
