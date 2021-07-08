@@ -462,7 +462,7 @@ img {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(199, 196, 196, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -514,10 +514,13 @@ img {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
     padding: 40px;
   }
+  .modal-form {
+    height: 529px;
+  }
   .close-btn {
-    top: 8px;
     width: 30px;
     height: 30px;
   }
@@ -525,6 +528,10 @@ img {
     width: 11px;
     height: 11px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  max-height: 609px;
 }
 
 .modal-form {
@@ -1054,6 +1061,9 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
+  }
+  .client__card:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 

@@ -38,10 +38,13 @@
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
     padding: 40px;
   }
+  .modal-form {
+    height: 529px;
+  }
   .close-btn {
-    top: 8px;
     width: 30px;
     height: 30px;
   }
@@ -49,4 +52,7 @@
     width: 11px;
     height: 11px;
   }
+}
+@media screen and (min-width: 768px) {
+  max-height: 609px;
 }
