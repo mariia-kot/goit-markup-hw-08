@@ -4,9 +4,10 @@
 }
 .modal-form__title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 18px;
+  line-height: 1.5;
   text-align: center;
+  margin-top: 16px;
   margin-bottom: 12px;
 }
 .modal-form__label {
@@ -18,9 +19,7 @@
   margin-top: 10px;
 }
 .modal-form__label--first {
-  &.first {
-    margin-top: 0;
-  }
+  margin-top: 0;
 }
 .modal-form__input-field {
   position: relative;
@@ -78,4 +77,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .modal-form__title {
+    font-size: 20px;
+    margin-top: 0;
+  }
 }
